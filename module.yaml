@@ -1,0 +1,5 @@
+product: jvm/app
+
+dependencies:
+  - $kotlin.reflect
+  - org.jetbrains.kotlinx:kotlinx-datetime:0.7.1

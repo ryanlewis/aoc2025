@@ -1,0 +1,9 @@
+# Build output
+build/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
