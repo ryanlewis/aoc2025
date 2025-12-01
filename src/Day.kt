@@ -1,5 +1,5 @@
 abstract class Day(
-    protected val input: List<String>,
+    @Suppress("unused") protected val input: List<String>,
 ) {
     abstract fun part1(): String
 

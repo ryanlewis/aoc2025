@@ -47,7 +47,7 @@ private fun getDay(
         val clazz = Class.forName(className).kotlin
         val constructor = clazz.primaryConstructor ?: return null
         constructor.call(input) as? Day
-    } catch (e: ClassNotFoundException) {
+    } catch (_: ClassNotFoundException) {
         null
     }
 }
