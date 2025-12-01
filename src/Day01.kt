@@ -31,6 +31,11 @@ class Day01(
         return if (delta >= 0) {
             newPos.floorDiv(DIAL_SIZE)
         } else {
+            // The -1 shift puts position 0 in the "previous" bucket, so:
+            // - pos=0 → 99 (delta=-1): (-1).floorDiv(100) - (-2).floorDiv(100) = 0 crossings
+            //   (started at boundary, didn't cross it)
+            // - pos=1 → 99 (delta=-2): (0).floorDiv(100) - (-2).floorDiv(100) = 1 crossing
+            //   (passed through 0)
             (pos - 1).floorDiv(DIAL_SIZE) - (newPos - 1).floorDiv(DIAL_SIZE)
         }
     }
