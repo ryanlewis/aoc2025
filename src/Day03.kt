@@ -1,7 +1,7 @@
 class Day03(
     input: List<String>,
 ) : Day(input) {
-    val parsed by lazy { input.parse() }
+    private val parsed by lazy { input.parse() }
 
     override fun part1(): String = parsed.sumOf { it.selectLargest(2).toNumber() }.toString()
 
