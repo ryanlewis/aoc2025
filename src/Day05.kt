@@ -1,5 +1,4 @@
-@file:Suppress("unused")
-
+@Suppress("unused")
 class Day05(
     input: List<String>,
 ) : Day(input) {

@@ -1,3 +1,4 @@
+@Suppress("unused")
 class Day03(
     input: List<String>,
 ) : Day(input) {
